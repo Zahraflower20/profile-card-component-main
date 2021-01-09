@@ -351,10 +351,18 @@
   /** THE CODE STARTS HERE*/
 
   body {
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position: top 150% left -15%,
+      bottom 150% right -15%; ;
+      margin: auto;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     overflow: hidden;
   }
+
 
   p {
     color: hsl(0, 0%, 59%);
@@ -363,8 +371,12 @@
   .container {
     background: white;
     border-radius: 23px;
-    margin: 70px 580px 70px 580px;
+    
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
     width: 350px;
+    filter: drop-shadow(0 0 0.2rem gray);
     position: relative;
     
   }
@@ -423,30 +435,26 @@
      font-size: 12px;
      letter-spacing: 1px;
    }
-   .box .top,
-   .box .bottom {
-     position: absolute;
-     
-     
-     width: 900px;
-     height: auto;
-     z-index: 0;
-   }
-   .top {
-    top: -60%;
-    left: -15%;
-    
-   }
-   .bottom {
-     bottom: -50%;
-     right: -15%;
-   }
-
+  
    .attribution {
       text-align: center; 
+      margin: auto;
    }
 
-  @media all and (min-width: 375px) and (max-width: 1440px) {
+  @media (max-width: 1440px) {
+
+    body {
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-position: top 150% left -15%,
+      bottom 150% right -15%; ;
+      margin: auto;
+    width: 100%;
+    height: auto;
+      background-repeat: no-repeat;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+      overflow: hidden;
+    }
 
     .container {
       background: white;
@@ -456,6 +464,7 @@
       margin-bottom: 70px;
       width: 350px;
       position: relative;
+      filter: drop-shadow(0 0 0.2rem gray);
     
     }
     
@@ -468,25 +477,46 @@
      
     }
 
-    .box .top,
-   .box .bottom {
-     width: 900px;
-     height: auto;
-     
    }
 
-   /* .top {
-    top: -60%;
-    left: -65%;
+   @media (min-width: 375px) {
+
+    body {
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-position: top 150% left -15%,
+      bottom 150% right -15%; ;
+      margin: auto;
+    width: 100%;
+    height: auto;
+      background-repeat: no-repeat;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      background: white;
+      border-radius: 23px;
+      margin: 0 auto;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      width: 350px;
+      position: relative;
+      filter: drop-shadow(0 0 0.2rem gray);
     
-   }
-   .bottom {
-     bottom: -50%;
-     right: -60%;
-   } */
+    }
+    
+    .attribution {
+      
+      text-align: center; 
+      margin: auto;
+    }
 
+    .person img {
+      width: 100px;
+     
+    }
 
-  
    }
 
   
