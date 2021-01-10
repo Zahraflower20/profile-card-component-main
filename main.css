@@ -372,9 +372,10 @@
     background: white;
     border-radius: 23px;
     
-    margin: auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 350px;
     filter: drop-shadow(0 0 0.2rem gray);
     position: relative;
@@ -441,15 +442,15 @@
       margin: auto;
    }
 
-  @media (max-width: 1440px) {
+  @media screen and (max-width: 1440px) {
 
     body {
       background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
       background-position: top 150% left -15%,
       bottom 150% right -15%; ;
       margin: auto;
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
       background-repeat: no-repeat;
       background-color: hsl(185, 75%, 39%);
       font-family: 'Kumbh Sans', sans-serif;
@@ -479,7 +480,7 @@
 
    }
 
-   @media (min-width: 375px) {
+   @media screen and (min-width: 375px) {
 
     body {
       background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
